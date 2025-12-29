@@ -1,0 +1,20 @@
+<section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ .Title }}
+        </a>
+      </h1>
+    </header>
+
+    {{ if .Params.image }}
+      <div class="project-page-image">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+      </div>
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+</section>
+

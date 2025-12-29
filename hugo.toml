@@ -1,0 +1,76 @@
+baseURL = 'https://gracehaeunbaek.github.io'
+languageCode = 'en-us'
+title = 'Grace Baek'
+theme = 'hugo-coder'
+
+[pagination]
+pagerSize = 20
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[services]
+[services.disqus]
+shortname = "yourdiscussshortname"
+
+[params]
+  author = "Hi, I'm <span class=\"pink-name\">Grace!</span>"
+  info = "I'm a software developer with a background in computer science & economics based in California. I am a detail-oriented full-stack engineer who loves tackling complex problems and building intuitive, people-focused technology."
+  description = "Software developer passionate about solving complex problems through technology"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/pixel-character-little-girl.png"
+  avatarURL = "images/pixel-character-little-girl.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/gracebaekk/"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin-in fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/grace-baek-ba2687219/"
+[[params.social]]
+  name = "Email"
+  icon = "fa-solid fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:gracebaek@berkeley.edu"
+
+# Menu links
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+[[menu.main]]
+  name = "Projects"
+  weight = 2
+  url  = "projects/"
+[[menu.main]]
+  name = "Resume"
+  weight = 3
+  url = "https://drive.google.com/file/d/1jh46s5OuYl6VywByY2BciepyXtepb5Jc/view?usp=sharing"

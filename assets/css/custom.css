@@ -1,0 +1,77 @@
+/* Custom styles for lighter font weight on info section */
+.about h2 {
+  font-weight: 300;
+}
+
+/* Make author name italic */
+.about h1 {
+  font-style: italic;
+  margin-top: 0 !important;
+}
+
+/* Make Grace pink */
+.about h1 .pink-name {
+  color: #ff91a4;
+}
+
+/* Make avatar image bigger */
+.avatar img {
+  width: 30rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar img {
+    width: 25rem !important;
+  }
+}
+
+/* Make navigation links hover color match the title color */
+.navigation .navigation-list .navigation-item a:hover,
+.navigation .navigation-list .navigation-item a:focus {
+  color: #ff91a4 !important;
+}
+
+/* Make Grace Baek title have same hover color as other nav links */
+.navigation .navigation-title:hover,
+.navigation .navigation-title:focus {
+  color: #ff91a4 !important;
+}
+
+/* Style project images in list */
+.list ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list ul li .project-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Style project images on individual project pages */
+.page .project-page-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.page .project-page-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Disable hyphenation - prevent words from being cut off with dashes */
+.content article p {
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  -ms-hyphens: none !important;
+  word-break: normal !important;
+  text-align: left !important;
+  text-justify: none !important;
+}
+

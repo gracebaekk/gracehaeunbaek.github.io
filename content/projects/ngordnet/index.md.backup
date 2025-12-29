@@ -1,0 +1,16 @@
++++
+date = '2025-12-28T00:00:00-07:00'
+draft = false
+title = 'NGordNet'
+weight = 11
+listImage = "images/ngordnet.png"
+image = "images/ngordnet-content.png"
++++
+
+I implemented a word frequency analysis system using Java's TreeMap data structure to process and analyze the massive Google NGram dataset. The system creates efficient word-frequency mappings that enable fast lookups and trend analysis for individual words over time.
+
+I developed algorithms that process historical text data to track how word usage has changed across different time periods, revealing interesting linguistic trends and patterns. The TreeMap implementation ensures efficient storage and retrieval of word frequency data, making it possible to handle the large-scale NGram dataset.
+
+I built a web-based frontend that visualizes these word frequency trends over time, allowing users to explore how language has evolved. The visualization makes it easy to see when words became popular, declined in usage, or experienced significant changes in frequency. This project combined data structures, algorithm design, and web development to create an engaging tool for linguistic analysis.
+
+**Technologies:** Java, HTML/CSS
