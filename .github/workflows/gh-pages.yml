@@ -39,6 +39,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -47,9 +48,12 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url || 'https://gracehaeunbaek.github.io' }}/" \
+            --destination ./public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
 
   deploy:
     environment:
